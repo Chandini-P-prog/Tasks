@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Registration Form</title>
+<style>
+  form {
+    padding-left: 20px; /* Adjust the value as needed */
+    padding-right: 100px; /* Adjust the value as needed */
+   
+  }
+  .form-field {
+    margin-bottom: 10px; /* Adjust the value as needed */
+  }
+</style>
+</head>
+<body>
+
+<h2>User Registration Form</h2>
+
+<form action="/submit-form" method="post">
+  <label for="full-name">Full Name:</label>
+  <input type="text" id="full-name" name="full-name" value="Vincent Maverick Durano" required><br><br>
+
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" value="Vinz" required><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <label for="re-password">Re Password:</label>
+  <input type="password" id="re-password" name="re-password" required><br><br>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" value="Cebu, Philippines" required><br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" value="22" required><br><br>
+
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender" required>
+    <option value="male" selected>Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br><br>
+
+  <button type="submit">Save</button>
+</form>
+
+</body>
+</html>
